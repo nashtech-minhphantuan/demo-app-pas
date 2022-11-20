@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from '../pages/features/counter/counterSlice';
+import counterReducer from "../pages/features/counter/counterSlice";
+import pokemonReducer from "../pages/features/pokemon/pokemonSlice";
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    pokemonsWiki: pokemonReducer,
   },
 });
 // Infer the `RootState` and `AppDispatch` types from the store itself
