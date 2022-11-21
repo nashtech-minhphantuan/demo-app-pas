@@ -129,7 +129,6 @@ export const getPokemonDetail = createAsyncThunk(
     const response = await axios.get(
       `${BASE_URL}/api/pokemons?populate=*&filters%5Bid%5D=${id}`
     );
-    console.log(response.data);
     return response?.data;
   }
 );

@@ -42,9 +42,7 @@ const PokemonDetail = () => {
     dispatch(updatePokemon({ ...{ values: values }, ...{ id: pokemon?.id } }));
   };
 
-  const onFinishFailed = (errorInfo: any) => {
-    console.log("Failed:", errorInfo);
-  };
+  const onFinishFailed = (errorInfo: any) => {};
 
   useEffect(() => {
     setFields([
